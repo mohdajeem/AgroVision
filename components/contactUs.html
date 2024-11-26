@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+
+    <script src="contactUs.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand me-auto" href="#"
+          ><div class="logo">
+            <img src="../resources/logo.png" alt="logo" /></div
+        ></a>
+
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <div class="logo">
+                <img src="../resources/logo.png" alt="logo" />
+              </div>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-lg-2"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="./about1.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="/index.html#packages"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="/resourses.html">Tutorials</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active mx-lg-2 text-warning fw-bolder"
+                  href="./contactUs.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link mx-lg-2 login-button-hide"
+                  href="../components/Login.html"
+                  >Login/SignUp</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="./Login.html" class="btn btn-outline-light Login-Button"
+          >Login/SignUp</a>
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="background">
+      <div
+        class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column"
+      >
+        <h1>Contact Us</h1>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <div class="container" id="contact">
+        <div class="row">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-phone"> Phone</i>
+              <h6>+91 8207554890</h6>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-envelope"> Email</i>
+              <h6>chandinigujju4@gmail.com</h6>
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-location-dot"> Address</i>
+              <h6>Lovely Professional University, Jalandhar, Punjab</h6>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <input
+              type="text"
+              class="form-control form-control"
+              placeholder="Name"
+            />
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <input
+              type="text"
+              class="form-control form-control"
+              placeholder="Email"
+            />
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <input
+              type="text"
+              class="form-control form-control"
+              placeholder="Phone"
+            />
+          </div>
+          <div class="form-group" style="margin-top: 30px">
+            <textarea
+              class="form-control"
+              id=""
+              rows="5"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="messagebtn text-center"><button>Message</button></div>
+        </div>
+      </div>
+
+     
+    </section>
+
+    <section class="faq">
+      <div class="faq-box">
+        <h1 class="display3 text-center mb-3">Frequently Asked Questions</h1>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                <b
+                  >How does the Crop Disease Detection feature work?</b
+                >
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Our advanced AI and machine learning algorithms analyze images of your crops to identify diseases. Simply upload a clear image of the affected plant, and the system will diagnose the issue, suggest treatment options, and provide video guides for proper application.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                <b>What types of crop diseases can the system detect?</b>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                The system is designed to detect a wide range of common crop diseases, including fungal, bacterial, and viral infections. For specific diseases, please refer to our list of supported conditions or consult our customer support.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                <b>How accurate is the disease diagnosis? </b>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Our AI model is trained on a large dataset of crop images and disease cases, providing highly accurate diagnoses of upto 98% . However, for the best results, ensure the images are clear and well-lit.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                <b>
+                  Are the treatment recommendations provided by the system effective?
+                </b>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Yes, our system provides treatment recommendations based on best practices and expert guidelines. We offer options for both conventional pesticides and organic solutions. Always follow the provided instructions and consider consulting a local expert for additional advice.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                <b
+                  >Are the treatments provided by the system environmentally friendly?
+                </b>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                We offer both conventional and organic treatment options. Organic solutions are included as alternatives for those looking to minimize environmental impact.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix"
+                aria-expanded="false"
+                aria-controls="flush-collapseSix"
+              >
+                <b>
+                How can I use the chatbot on the website for help with crop disease detection?
+                </b>
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Our chatbot is designed to assist you with quick queries and provide support regarding crop disease detection. Simply click on the chat icon to ask questions about using the detection tool, get guidance on uploading images, or receive information about treatment options. Additionally, our chatbot is multilingual, offering support in multiple languages to ensure you can get help in the language you're most comfortable with. It can also connect you with our customer support team for more detailed assistance if needed.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer text-white">
+      <div class="container pt-3 ps-4">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <div class="f-head">ABOUT US</div>
+            <div class="f-body">
+              <ul>
+                <li>Management</li>
+                <li>Terms of Services</li>
+                <li>User Agreement</li>
+                <li>Privacy</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="f-head">TRAVEL DETAILS</div>
+            <div class="f-body">
+              <ul>
+                <li>PNR Status</li>
+                <li>Offers</li>
+                <li>Airline Routes</li>
+                <li>Train Running Status</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="f-head">OUR PRODUCTS</div>
+            <div class="f-body">
+              <ul>
+                <li>Domestic Hotels</li>
+                <li>International Hotels</li>
+                <li>Domestic Flights</li>
+                <li>International Flights</li>
+                <li>Multi-City Flights</li>
+                <li>Nearby Getaways</li>
+                <li>Bus Booking</li>
+                <li>Cab Booking</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="f-head">MORE LINKS</div>
+            <div class="f-body">
+              <ul>
+                <li>Cheap Flights</li>
+                <li>Hotels Near Me</li>
+                <li>My Bookings</li>
+                <li>Cancellation</li>
+                <li>My Account</li>
+                <li>Wallet</li>
+                <li>Advertise with Us</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="container">
+        <div class="follow-head">
+          <h5>Follow Us</h5>
+        </div>
+        <div class="icon">
+          <div class="icons">
+            <i class="fab fa-instagram fa-2x" style="color: #ffffff"></i>
+            <i class="fab fa-twitter-square fa-2x" style="color: #ffffff"></i>
+            <i class="fab fa-youtube fa-2x" style="color: #ffffff"></i>
+            <i class="fab fa-facebook fa-2x" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container pb-3">
+        <div class="last row">
+          <div class="col-4">
+            <div class="col" style="border-right: 1px solid #fff">
+              Privacy Policy
+            </div>
+            <div class="col" style="border-right: 1px solid #fff">
+              Terms & Conditions
+            </div>
+            <div class="col">FAQ</div>
+          </div>
+          <div class="col text-center"></div>
+          <div class="col text-end">
+            Copyright&nbsp;&copy;2024&nbsp;Agriter. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="script.js"></script>
+    <!-- <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/1cfb7415-d4fc-4477-8d00-3717d30c975b/webchat/config.js" defer></script> -->
+
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var scrollPosition = window.scrollY;
+        var backToTopButton = document.getElementById("backtoTop");
+
+        if (scrollPosition > 300) {
+          // Adjust this value as needed to show the button at the desired scroll position
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const slideGroup = document.querySelector(".slide_group");
+        let currentSlide = 0;
+        const images = [
+          "./images/carousel-img-2.jpg",
+          "./images/carousel-img-1.jpg",
+          "./images/carousel-img-3.jpg",
+          "./images/carousel-img-4.jpg",
+        ];
+
+        function showSlide(n) {
+  slideGroup.style.left = `${-n * 100}%`; // Adjust left property based on current slide
+  currentSlide = n;
+}
+
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % images.length; // Move to the next slide
+          showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 2000); // Automatically change slide every 2 seconds
+
+        // Preload images for smoother transition
+        images.forEach((src) => {
+          const img = new Image();
+          img.src = src;
+        });
+      });
+
+      // mobile no validation @dhruv8433
+      const mobileNumberInput = document.getElementById("mobileNumber");
+
+      mobileNumberInput.addEventListener("input", () => {
+        const maxLength = 10;
+        const value = mobileNumberInput.value;
+
+        if (value.length > maxLength) {
+          mobileNumberInput.value = value.slice(0, maxLength);
+        }
+      });
+    </script>
+    <!-- <script src="https://mediafiles.botpress.cloud/43c4d3ec-a251-474f-8cce-3d8737805a57/webchat/config.js" defer></script> -->
+    <script type="text/javascript">
+      (function (d, t) {
+        var v = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+          window.voiceflow.chat.load({
+            verify: { projectID: "664632efd181ce0921d32ed5" },
+            url: "https://general-runtime.voiceflow.com",
+            versionID: "production",
+          });
+        };
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
+      })(document, "script");
+    </script>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 10);
+      });
+    </script>
+    <script>
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove", function (e) {
+        cursor.style.cssText = cursor2.style.cssText =
+          "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../script/index.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  // Contact form validation and submission
+  const contactForm = document.querySelector(".contact-form");
+  const messageBtn = document.querySelector(".messagebtn button");
+  messageBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    const name = contactForm.querySelector('input[placeholder="Name"]').value.trim();
+    const email = contactForm.querySelector('input[placeholder="Email"]').value.trim();
+    const phone = contactForm.querySelector('input[placeholder="Phone"]').value.trim();
+    const message = contactForm.querySelector("textarea").value.trim();
+
+    let valid = true;
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    let phonePattern = /^[6-9]\d{9}$/;
+
+    if (name === "") {
+      alert("Please enter your name");
+      valid = false;
+    } else if (email === "" || !email.match(emailPattern)) {
+      alert("Please enter a valid email address");
+      valid = false;
+    } else if (phone === "" || !phone.match(phonePattern)) {
+      alert("Please enter a valid 10-digit phone number");
+      valid = false;
+    } else if (message === "") {
+      alert("Please enter your message");
+      valid = false;
+    }
+
+    if (valid) {
+      // Prepare data to send
+      const formData = {
+        name: name,
+        email: email,
+        phone: phone,
+        message: message
+      };
+
+      // Send form data using Fetch API
+      fetch("/send-message", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      })
+        .then((response) => {
+          if (response.ok) {
+            alert("Message sent successfully!");
+            contactForm.reset(); // Reset the form on success
+          } else {
+            alert("Failed to send message. Please try again.");
+          }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          alert("An error occurred. Please try again.");
+        });
+    }
+  });
+
+  // FAQ Accordion
+  const faqItems = document.querySelectorAll(".accordion-button");
+
+  faqItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      const isCollapsed = this.classList.contains("collapsed");
+      faqItems.forEach((btn) => btn.classList.add("collapsed")); // Collapse all
+      if (isCollapsed) {
+        this.classList.remove("collapsed"); // Expand the clicked one
+      }
+    });
+  });
+});
+
+
+    </script>
+  </body>
+</html>

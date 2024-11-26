@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Description Section</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.8;
+            color: #333;
+        }
+        .heading {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            font-size: 56px;
+            color: #4caf50;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        h1::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #4caf50;
+            bottom: -10px;
+            left: 0;
+        }
+        h3 {
+            font-size: 26px;
+            margin: 20px 0 10px;
+            color: #d32f2f;
+            border-bottom: 2px solid #d32f2f;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        li {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="heading" id="content">
+    <h1> Maize <span style="font-weight: bold; font-size: 25px;">Gray Leaf Spot</span></h1>
+
+    <p><b>Gray Leaf Spot (GLS)</b> is a significant fungal disease in maize, primarily caused by <em>Cercospora zeae-maydis</em> and <em>Cercospora zeina</em>. It leads to reduced crop yield and is considered a major threat worldwide.</p>
+
+    <h3>Factors Contributing to Gray Leaf Spot</h3>
+    <ul>
+        <li><b>Environmental Conditions</b>: Thrives in warm, humid conditions, especially during wet weather.</li>
+        <li><b>Crop Rotation</b>: Continuous maize planting increases the risk as the fungus survives in crop debris.</li>
+        <li><b>Susceptible Hybrids</b>: Certain maize hybrids are more vulnerable to the disease.</li>
+        <li><b>Nutrient Deficiencies</b>: Poor soil fertility and imbalanced nutrients make plants more susceptible.</li>
+        <li><b>Planting Density</b>: High density creates a microclimate favorable for disease development.</li>
+        <li><b>Inoculum Sources</b>: Infected plant debris or seeds spread the disease to healthy plants.</li>
+    </ul>
+
+    <h3>Symptoms Overview</h3>
+    <ul>
+        <li>Small necrotic spots with yellow halos on lower leaves, expanding and turning grayish.</li>
+        <li>Symptoms appear two to three weeks before the tasseling stage, affecting all maize hybrids.</li>
+    </ul>
+
+    <h3>Organic Methods to Control Gray Leaf Spot</h3>
+    <ul>
+        <li><b>Crop Rotation</b>: Rotate maize with non-host crops to reduce fungal buildup in soil.</li>
+        <li><b>Resistant Varieties</b>: Use maize hybrids resistant to Gray Leaf Spot to minimize incidence.</li>
+        <li><b>Sanitation</b>: Remove and destroy infected plant debris to reduce inoculum sources.</li>
+        <li><b>Proper Spacing</b>: Ensure adequate plant spacing to improve air circulation and lower humidity.</li>
+        <li><b>Organic Fungicides</b>: Apply organic fungicides with copper or sulfur to control fungal diseases.</li>
+        <li><b>Companion Planting</b>: Plant companion crops that may deter fungal disease development.</li>
+    </ul>
+
+    <h3>Inorganic Methods to Control Gray Leaf Spot</h3>
+    <ul>
+        <li><b>Chemical Fungicides</b>: Use synthetic fungicides like azoxystrobin or propiconazole, applied at recommended rates.</li>
+        <li><b>Nutrient Management</b>: Apply balanced fertilizers to keep plants healthy and less susceptible.</li>
+        <li><b>Irrigation Management</b>: Avoid overhead irrigation to reduce leaf wetness and fungal growth.</li>
+        <li><b>Monitoring and Scouting</b>: Regularly monitor fields for early signs and apply fungicides preventively.</li>
+        <li><b>Soil Amendments</b>: Use inorganic soil amendments to improve plant vigor and disease resistance.</li>
+    </ul>
+
+    <button class="btn" onclick="generatePDF()">Generate PDF</button>
+   </div> 
+
+   <script>
+       function generatePDF() {
+           const element = document.getElementById('content');
+           const opt = {
+               margin:       1,
+               filename:     'maize_gray_leaf_spot.pdf',
+               image:        { type: 'jpeg', quality: 0.98 },
+               html2canvas:  { scale: 2 },
+               jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+           };
+
+           html2pdf()
+               .from(element)
+               .set(opt)
+               .save()
+               .catch(err => {
+                   console.error("Error generating PDF:", err);
+                   alert("An error occurred while generating the PDF. Please try again.");
+               });
+       }
+   </script>
+</body>
+</html>

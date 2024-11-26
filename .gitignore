@@ -1,0 +1,7 @@
+AgroVision\crop_best_model.pth
+AgroVision\Crop_recommendation.csv
+AgroVision\minmaxscaler.pkl
+AgroVision\model.pkl
+AgroVision\Crop Classification With Recommendation System.ipynb
+AgroVision\node_modules
+AgroVision\.vscode

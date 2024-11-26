@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    font-family: "Lato", sans-serif;
+}
+.navbar{
+    transition: all 0.5s;
+}
+
+.navbar .container {
+    height: 70px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #80ff95;
+}
+
+.bg-change{
+    background-color: #248672;
+}
+
+.navbar-scrolled{
+    background-color: #248672;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 991px) {
+    .login-button-hide {
+        display: none;
+    }
+
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #80ff95;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link:active::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .Login-Button {
+        display: none;
+    }
+
+    .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .tele .box {
+        padding: 3px;
+        margin: 0 auto;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .tele .box img {
+        max-width: 120vw;
+    }
+
+    .sign-up .container .form {
+        width: 90vw;
+    }
+
+    .achieve .left i {
+        font-size: 10vw;
+    }
+
+}
+
+.logo{
+    height: 130px;
+    width: 130px;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    
+    .background .main-head{
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+    
+    .background .main-head span{
+        font-size: 3em;
+    }
+    
+    .background .main-intro{
+        padding: 20px;
+        text-align: center;
+        font-size: small;
+        font-weight: 500;
+    }
+
+    .partners .container{
+        padding: 5px 30px;
+    }
+
+    .partners{
+        margin-bottom: 2em;
+    }
+
+    .logo{
+       height: 60px; 
+       width: 120px;
+    }
+
+}
+
+.background {
+    background: url(https://plus.unsplash.com/premium_photo-1661962692059-55d5a4319814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGFncmljdWx0dXJlfGVufDB8MHwwfHx8MA%3D%3D) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.background::before {
+    background-color: rgba(0, 0, 0, 0.4);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+.background .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.main-head{
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+.main-head span{
+    font-size: 2.5em;
+}
+
+.main-intro{
+    padding: 2em 6em;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+.red-heading{
+    color: #cd5360;
+}
+
+.tele h1{
+    font-weight: 800;
+}
+
+.partners h1 {
+    font-weight: 500;
+}
+
+.packages h1, .partners h1{
+    color: #009E60;
+}
+
+.view {
+    width: fit-content;
+    font-weight: 500;
+    border: none;
+    padding: 1em;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.view:hover {
+    background-color: rgba(255, 166, 0, 0.819);
+    box-shadow: 2px 2px 2px black;
+}
+
+.view:active{
+    background-color: rgba(255, 166, 0, 0.819);
+}
+
+.tele .box {
+    background-color: rgb(0, 213, 255);
+    display: flex;
+    padding: 3vh 2vw 2vw 3vh;
+    margin: 10vh 0 15vh;
+}
+
+.tele .box img {
+    margin: 10px;
+}
+
+.content {
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.achieve {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.achieve .col-6 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.achieve .left {
+    font-size: 3vw;
+}
+
+.sign-up {
+    background: url(https://media.istockphoto.com/id/532005803/photo/paddy-of-rice-back-ground-in-farm-thailand.webp?b=1&s=170667a&w=0&k=20&c=tuu7J7yoVjSUEmubcEGuxoUQfI-CT_R2BDb4CnkQ1_k=);
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+
+.sign-up .bg {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sign-up .container {
+    height: 50vh;
+    z-index: 2;
+    position: relative;
+}
+
+.sign-up h1 {
+    font-size: 1.5em;
+}
+
+.sign-up h2 {
+    font-size: 1.2em;
+}
+
+.form {
+    width: 50vw;
+}
+
+.wrapper {
+    position: relative;
+    width: 90%;
+}
+
+.wrapper input {
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    width: 100%;
+    columns: #fff;
+}
+
+.wrapper input::placeholder {
+    color: #fff;
+}
+
+.wrapper input {
+    outline: none;
+    box-shadow: none;
+}
+
+.wrapper button {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 50%;
+    padding: auto 3px 3px auto;
+    width: max-content;
+    position: absolute;
+    right: 0;
+    transform: translateX(-10%);
+    bottom: 10%;
+}
+
+.partners{
+    margin-bottom: 2em;
+}
+
+.partner-logo{
+    height: 10vmax;
+    width: 10vmax;
+}
+
+.partner-logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.footer {
+    background-color: #248672;
+    color: white;
+}
+
+.footer .container ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: large;
+}
+
+.footer .row .f-head {
+    font-size: large;
+    margin-bottom: 1em;
+    width: fit-content;
+    border-bottom: 2px solid #fff;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon i {
+    margin: 2px 5px;
+    cursor: pointer;
+}
+
+.last {
+    font-size: 12px;
+    padding: 0;
+    gap: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.last .col-4 .col {
+    margin: 0 1px;
+    display: inline;
+    padding-right: 5px;
+}
+
